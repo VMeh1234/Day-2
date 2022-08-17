@@ -1,0 +1,17 @@
+import pandas as pd
+
+a = pd.read_csv("Task2.csv")
+D = a["After Course"] - a["Before Course"]
+S = sum(D)
+D2 = D**2
+y = sum(D2)
+D2,S,y
+n = len(a["After Course"])
+n
+T = (S)/(sqrt(((n*y)-(S)**2)/n-1))
+T
+p = 2.1
+if T > p :
+        print ("We reject the null hypothesis")
+else :   print ("We accept the null hypothesis")
+We reject the null hypothesis
